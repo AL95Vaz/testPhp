@@ -119,6 +119,7 @@ class SecurityPlugin extends Injectable
         $publicResources = [
             'index'    => ['index'],
             'about'    => ['index'],
+            'ejemplo'  => ['index'],
             'register' => ['index'],
             'errors'   => ['show401', 'show404', 'show500'],
             'session'  => ['index', 'register', 'start', 'end'],

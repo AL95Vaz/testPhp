@@ -13,15 +13,13 @@ declare(strict_types=1);
 
 namespace Invo\Controllers;
 
-class IndexController extends ControllerBase
+class EjemploController extends ControllerBase
 {
     public function initialize()
     {
         parent::initialize();
 
-        $this->tag->title()
-                  ->set('Welcome')
-        ;
+        $this->tag->title()->set('Mi Ejemplo');
     }
 
     public function indexAction(): void

@@ -47,6 +47,11 @@ class Products extends Model
      */
     public $active;
 
+     /**
+     * @var string
+     */
+    public $color;
+
     /**
      * Products initializer
      */

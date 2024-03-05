@@ -78,5 +78,16 @@ class ProductsForm extends Form
         ]);
 
         $this->add($price);
+
+        /**
+         * Color text field
+         */
+        $color = new Text('color');
+        $color->setLabel('Color');
+        $color->addValidators([
+            new PresenceOf(['message' => 'Color is required']),
+        ]);
+
+        $this->add($color);
     }
 }

@@ -1,7 +1,10 @@
 <?php
 declare(strict_types=1);
 
+use Dotenv\Dotenv;
 use Phalcon\Config\Config;
+
+Dotenv::createImmutable(__DIR__.'/../')->load();
 
 return new Config([
     'database' => [
